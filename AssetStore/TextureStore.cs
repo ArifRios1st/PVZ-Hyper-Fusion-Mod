@@ -7,10 +7,15 @@ namespace PVZ_Hyper_Fusion.AssetStore
     public static class TextureStore
     {
         internal static Dictionary<string, string> textureDict = new Dictionary<string, string>();
-        public static List<Texture2D> changedList = new List<Texture2D>();
 
         internal static void Init()
         {
+            FileLoader.LoadTextures();
+        }
+
+        internal static void Reload() 
+        {
+            textureDict.Clear();
             FileLoader.LoadTextures();
         }
 

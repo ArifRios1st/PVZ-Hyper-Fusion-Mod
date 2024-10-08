@@ -5,13 +5,14 @@ using HarmonyLib;
 using Il2CppTMPro;
 using PVZ_Hyper_Fusion.AssetStore;
 
-[assembly: MelonInfo(typeof(PVZ_Hyper_Fusion.Core), "PVZ Hyper Fusion", "0.0.1", "arifrios1st", null)]
+[assembly: MelonInfo(typeof(PVZ_Hyper_Fusion.Core), "PVZ Hyper Fusion", "0.0.2", "arifrios1st", null)]
 [assembly: MelonGame("LanPiaoPiao", "PlantsVsZombiesRH")]
 
 namespace PVZ_Hyper_Fusion
 {
     public class Core : MelonMod
     {
+        private static DateTime dtStart;
         private static DateTime? dtStartToast;
         private static string toast_txt;
 
@@ -20,6 +21,11 @@ namespace PVZ_Hyper_Fusion
 #if USE_TEXTURE
         object replaceTextureRoutine = null;
 #endif
+
+        public override void OnEarlyInitializeMelon()
+        {
+            dtStart = DateTime.Now;
+        }
 
         public override void OnInitializeMelon()
         {
@@ -31,17 +37,20 @@ namespace PVZ_Hyper_Fusion
 #endif
         }
 
-#if USE_TEXTURE
         public override void OnLateInitializeMelon()
         {
+            dtStart = DateTime.Now;
+#if USE_TEXTURE
             replaceTextureRoutine = MelonCoroutines.Start(TextureStore.ReplaceTexturesCoroutine());
+#endif
         }
 
         public override void OnDeinitializeMelon()
         {
+#if USE_TEXTURE
             MelonCoroutines.Stop(replaceTextureRoutine);
-        }
 #endif
+        }
 
         public static void ShowToast(string message)
         {
@@ -51,16 +60,13 @@ namespace PVZ_Hyper_Fusion
 
         public override void OnLateUpdate()
         {
-#if USE_MOD
             ModFeatures.OnLateUpdate();
-#endif
         }
 
         public override void OnGUI()
         {
-#if USE_MOD
 
-            if (ModFeatures.GetActive(ModFeatures.ModType.Help))
+            if (ModFeatures.GetActive(ModFeatures.ModType.Help) || DateTime.Now - dtStart < new TimeSpan(0, 0, 0, 5))
             {
                 string text = ModFeatures.GetFeatures();
                 int num = 0;
@@ -75,7 +81,7 @@ namespace PVZ_Hyper_Fusion
                 }
                 bool flag4 = GUI.Button(new Rect(10f, 30f, (float)num2 * 10f, (float)num * 16f + 15f), text);
             }
-#endif
+
             if (dtStartToast != null)
             {
                 GUI.Button(new Rect(10f, 10f, 200f, 20f), "\n" + toast_txt + "\n");

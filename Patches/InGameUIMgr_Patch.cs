@@ -26,8 +26,7 @@ namespace PVZ_Hyper_Fusion.Patches
             TextMeshProUGUI[] array2 = array;
             for (int i = 0; i < array2.Length; i++)
             {
-                string oriText = array2[i].text;
-                array2[i].text = StringStore.TranslateText(array2[i].text);
+                array2[i].text = StringStore.TranslateText(array2[i].text).Replace("\n", " ");
             }
         }
 

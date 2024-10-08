@@ -22,8 +22,6 @@ namespace PVZ_Hyper_Fusion
             if (!Directory.Exists(textureDir))
             {
                 Directory.CreateDirectory(textureDir);
-                SaveStrings();
-                DumpJson();
             }
             try
             {
@@ -49,6 +47,8 @@ namespace PVZ_Hyper_Fusion
                         }
                     }
                 }
+                SaveStrings();
+                DumpJson();
             }
             catch (Exception e)
             {

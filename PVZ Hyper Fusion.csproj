@@ -336,6 +336,7 @@
 		<Compile Include="Log.cs" />
 		<Compile Include="ModFeatures.cs" />
 		<Compile Include="Patches\Advanture_Btn_Patch.cs" />
+		<Compile Include="Patches\AlmanacMgrZombie_Patch.cs" />
 		<Compile Include="Patches\AlmanacMgr_Patch.cs" />
 		<Compile Include="Patches\Close_Patch.cs" />
 		<Compile Include="Patches\CustomSettings_Patch.cs" />
@@ -345,7 +346,7 @@
 		<Compile Include="Patches\InGameBtn_Patch.cs" />
 		<Compile Include="Patches\InGameText_Patch.cs" />
 		<Compile Include="Patches\InGameUIMgr_Patch.cs" />
-		<Compile Include="Patches\MainMenu_Mgr_Patch.cs" />
+		<Compile Include="Patches\IZEMgr_Patch.cs" />
 		<Compile Include="Patches\OptionBtn_Patch.cs" />
 		<Compile Include="Patches\PauseMenu_Btn_Patch.cs" />
 		<Compile Include="Patches\SelectYourPlants_Patch.cs" />

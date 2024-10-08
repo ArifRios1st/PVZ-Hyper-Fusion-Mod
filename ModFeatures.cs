@@ -1,5 +1,4 @@
-﻿#if USE_MOD
-using Il2Cpp;
+﻿using Il2Cpp;
 using System.Text;
 using UnityEngine;
 using HarmonyLib;
@@ -17,6 +16,7 @@ namespace PVZ_Hyper_Fusion
             ColumnPlant,
             DeveloperMode,
             ReloadStrings,
+            ReloadTextures,
             Help,
         }
 
@@ -45,6 +45,14 @@ namespace PVZ_Hyper_Fusion
                     return;
                 }
 #endif
+#if USE_TEXTURE
+                if (this.ModType == ModType.ReloadTextures)
+                {
+                    TextureStore.Reload();
+                    Core.ShowToast("Texture Reloaded!");
+                    return;
+                }
+#endif
                 IsActive = !IsActive;
                 if (this.ModType == ModType.Help)
                     return;
@@ -55,7 +63,7 @@ namespace PVZ_Hyper_Fusion
 
             public override string ToString()
             {
-                if(this.ModType == ModType.ReloadStrings || this.ModType == ModType.Help)
+                if(this.ModType == ModType.ReloadStrings || this.ModType == ModType.ReloadTextures || this.ModType == ModType.Help )
                     return string.Format("[{0}]{1}", this.KeyCode.ToString(), this.Name);
 
                 return string.Format("[{0}]{1} [{2}]", this.KeyCode.ToString(), this.Name, IsActive ? "ON" : "OFF");
@@ -64,13 +72,16 @@ namespace PVZ_Hyper_Fusion
 
         private static Dictionary<ModType, ModFeature> featureLists = new Dictionary<ModType, ModFeature>()
         {
+#if USE_MOD
             {ModType.UnlimitedSun,new ModFeature("Unlimited Sun",ModType.UnlimitedSun,KeyCode.F1)},
             {ModType.NoCooldown,new ModFeature("No Cooldown",ModType.NoCooldown,KeyCode.F2)},
             {ModType.NoTakeDamagePlant,new ModFeature("No Take Damage",ModType.NoTakeDamagePlant,KeyCode.F3)},
             {ModType.ColumnPlant,new ModFeature("Column Plant",ModType.ColumnPlant,KeyCode.F4)},
             {ModType.DeveloperMode,new ModFeature("Developer Mode",ModType.DeveloperMode,KeyCode.F5)},
+#endif
 #if USE_TRANSLATE
             {ModType.ReloadStrings,new ModFeature("Reload Translation String",ModType.ReloadStrings,KeyCode.Home, true)},
+            {ModType.ReloadTextures,new ModFeature("Reload Texture",ModType.ReloadTextures,KeyCode.End, true)},
 #endif
             {ModType.Help,new ModFeature("Feature Lists",ModType.Help,KeyCode.Insert, false)},
         };
@@ -124,6 +135,7 @@ namespace PVZ_Hyper_Fusion
             }
         }
 
+#if USE_MOD
         private static class PatchClasses
         {
             [HarmonyPatch(typeof(CardUI))]
@@ -255,6 +267,6 @@ namespace PVZ_Hyper_Fusion
                 }
             }
         }
+#endif
     }
 }
-#endif

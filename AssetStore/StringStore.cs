@@ -2,6 +2,7 @@
 using Il2CppTMPro;
 using MelonLoader;
 using UnityEngine;
+using Il2Cpp;
 using System.Text.RegularExpressions;
 
 namespace PVZ_Hyper_Fusion.AssetStore
@@ -59,6 +60,8 @@ namespace PVZ_Hyper_Fusion.AssetStore
             {@"^2、([^\s]+)","2. {0}"},
             {@"^3、([^\s]+)","3. {0}"},
             {@"^选择(\d+)","Select {0}"},
+
+            {@"^决战([^\s]+)！","Final Battle {0}"},
         };
 
         public static Dictionary<string, string> translationString = new Dictionary<string, string>()
@@ -264,9 +267,6 @@ namespace PVZ_Hyper_Fusion.AssetStore
             {"迷你游戏","Mini Games"},
 
 
-            {"决战泳池！","Final Battle\n Pool!"},
-
-
             {"解锁究极樱桃战神，超级大嘴花+樱桃大嘴花","Unlock the Ultimate Cherry War God, Super Big Mouth Flower + Cherry Big Mouth Flower"},
             {"解锁究极樱桃机枪，樱桃机枪+超级樱桃射手","Unlock the Ultimate Cherry Machine Gun, Cherry Machine Gun + Super Cherry Shooter"},
             {"解锁究极大喷菇，超级大喷菇+超级魅惑菇","Unlock the Ultimate Giant Ejection Mushroom, Super Giant Ejection Mushroom + Super Charm Mushroom"},
@@ -334,6 +334,28 @@ namespace PVZ_Hyper_Fusion.AssetStore
             { "窝草", "Tangle Kelp"},
             { "南瓜", "Pumpkin"},
             { "杨桃", "Starfruit"},
+
+            {"我是僵尸！","I am a zombie!"},
+            {"我也是僵尸！","I'm a zombie too!"},
+            {"你能吃了它吗！","Can you eat it!"},
+            {"雷区！","Minefield!"},
+            {"完全傻了！","Totally stunned!"},
+            {"卑鄙的低矮植物！","Despicable\nlowly plant!"},
+            {"QQ弹弹！","QQ bounce!"},
+            {"当代女大学生！","Modern Female\nCollege Student!"},
+            {"胆小菇前传！","Prequel of\nthe Scaredy-shroom!"},
+            {"冰冻关卡！","Frozen Level!"},
+            {"初见泳池！","First Encounter\nat the Pool!"},
+            {"三三得九！","Three times three\nequals nine!"},
+            {"嗯？","Hmm?"},
+            {"尸愁之路！","Path of the Undead!"},
+            {"严肃火炬！","Serious Torch!"},
+            {"你是僵尸","You are a zombie"},
+            {"你也是僵尸！","You are \na zombie too!"},
+            {"看星星！","Look at the stars!"},
+            {"万磁王！","Magneto!"},
+            {"十面埋伏！","Ambush from\nall sides!"},
+            {"马奇诺防线！","Maginot Line!"},
         };
 
         internal static void Init()
