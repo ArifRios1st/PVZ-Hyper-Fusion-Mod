@@ -1,3 +1,7 @@
+# Instalation
+- Install [MelonLoader](https://melonwiki.xyz/#/modders/quickstart) to game
+- extract mod into game folder path
+
 # Build
 - Edit GamePath in `PVZ Hyper Fusion.csproj` to game folder path
 - then build 
@@ -17,3 +21,11 @@
 - [F4] Plant Column
 - [F5] Developer Mode (Unlimited Sun+No Cooldown+Unlock All Plant+Travel Plant can Fusion in any stage)
 - [Insert] Show Features
+
+
+# SS
+![image](https://github.com/user-attachments/assets/7c3ecd9e-0feb-462e-b218-1108147a6726)
+![image](https://github.com/user-attachments/assets/10db56cd-151c-4cf6-beed-ec705dbd7666)
+![image](https://github.com/user-attachments/assets/a9c2d9db-76ba-47fa-82a0-d21d297e3cb3)
+
+
