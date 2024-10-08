@@ -1,3 +1,8 @@
+# Support Version
+- ~~v2.0.4~~
+- ~~v2.1.2~~
+- v2.1.3
+
 # Instalation
 - Install [MelonLoader](https://melonwiki.xyz/#/modders/quickstart) to game
 - extract mod into game folder path
