@@ -11,7 +11,7 @@
 - you can edit translation string in `Mods\PVZ_Hyper_Fusion\Strings\translation_strings.json` and `Mods\PVZ_Hyper_Fusion\Strings\translation_regexs.json`
 - you can replace texture by put textures to `Mods\PVZ_Hyper_Fusion\Textures`
 - you can translate Almanac Plant by copy `Mods\PVZ_Hyper_Fusion\Dump\LawnStrings.json` to `Mods\PVZ_Hyper_Fusion\LawnStringsTranslate.json` and edit it
-- you can translate Almanac Plant by copy `Mods\PVZ_Hyper_Fusion\Dump\ZombieStrings.json` to `Mods\PVZ_Hyper_Fusion\ZombieStringsTranslate.json` and edit it
+- you can translate Almanac Zombie by copy `Mods\PVZ_Hyper_Fusion\Dump\ZombieStrings.json` to `Mods\PVZ_Hyper_Fusion\ZombieStringsTranslate.json` and edit it
 
 
 # Mod Features
