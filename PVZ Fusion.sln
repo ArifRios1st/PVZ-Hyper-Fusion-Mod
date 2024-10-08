@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PVZ Hyper Fusion", "PVZ Hyper Fusion.csproj", "{303C12A2-4948-4110-89B2-E9E0106F315C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		OnlyMod|Any CPU = OnlyMod|Any CPU
+		OnlyTexture|Any CPU = OnlyTexture|Any CPU
+		OnlyTranslate|Any CPU = OnlyTranslate|Any CPU
+		Release|Any CPU = Release|Any CPU
+		TranslateAndTexture|Any CPU = TranslateAndTexture|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{303C12A2-4948-4110-89B2-E9E0106F315C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{303C12A2-4948-4110-89B2-E9E0106F315C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{303C12A2-4948-4110-89B2-E9E0106F315C}.OnlyMod|Any CPU.ActiveCfg = OnlyMod|Any CPU
+		{303C12A2-4948-4110-89B2-E9E0106F315C}.OnlyMod|Any CPU.Build.0 = OnlyMod|Any CPU
+		{303C12A2-4948-4110-89B2-E9E0106F315C}.OnlyTexture|Any CPU.ActiveCfg = OnlyTexture|Any CPU
+		{303C12A2-4948-4110-89B2-E9E0106F315C}.OnlyTexture|Any CPU.Build.0 = OnlyTexture|Any CPU
+		{303C12A2-4948-4110-89B2-E9E0106F315C}.OnlyTranslate|Any CPU.ActiveCfg = OnlyTranslate|Any CPU
+		{303C12A2-4948-4110-89B2-E9E0106F315C}.OnlyTranslate|Any CPU.Build.0 = OnlyTranslate|Any CPU
+		{303C12A2-4948-4110-89B2-E9E0106F315C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{303C12A2-4948-4110-89B2-E9E0106F315C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{303C12A2-4948-4110-89B2-E9E0106F315C}.TranslateAndTexture|Any CPU.ActiveCfg = TranslateAndTexture|Any CPU
+		{303C12A2-4948-4110-89B2-E9E0106F315C}.TranslateAndTexture|Any CPU.Build.0 = TranslateAndTexture|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F03CAD05-D1D5-463D-91FD-CFF9B395CB8A}
+	EndGlobalSection
+EndGlobal
