@@ -5,7 +5,7 @@
 
 # Instalation
 - Install [MelonLoader](https://melonwiki.xyz/#/modders/quickstart) to game
-- extract mod into game folder path
+- [Download](https://github.com/ArifRios1st/PVZ-Hyper-Fusion-Mod/releases/latest) and extract mod into game folder path
 
 # Build
 - Edit GamePath in `PVZ Hyper Fusion.csproj` to game folder path
