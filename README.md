@@ -22,6 +22,8 @@
 - [F5] Developer Mode (Unlimited Sun+No Cooldown+Unlock All Plant+Travel Plant can Fusion in any stage)
 - [Insert] Show Features
 
+# Credit
+- [蓝飘飘fly](https://space.bilibili.com/3546619314178489) - Developer Game
 
 # SS
 ![image](https://github.com/user-attachments/assets/7c3ecd9e-0feb-462e-b218-1108147a6726)
