@@ -96,7 +96,7 @@ namespace PVZ_Hyper_Fusion
             string translationStringRegex = JsonSerializer.Serialize(StringStore.translationStringRegex, new JsonSerializerOptions
             {
                 WriteIndented = true,
-                Encoder = JavaScriptEncoder.Create(UnicodeRanges.All)
+                Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping
             });
 
             File.WriteAllText(Path.Combine(stringDir, "translation_regexs.json"), translationStringRegex);
@@ -104,7 +104,7 @@ namespace PVZ_Hyper_Fusion
             string translationString = JsonSerializer.Serialize(StringStore.translationString, new JsonSerializerOptions
             {
                 WriteIndented = true,
-                Encoder = JavaScriptEncoder.Create(UnicodeRanges.All)
+                Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping
             });
 
             File.WriteAllText(Path.Combine(stringDir, "translation_strings.json"), translationString);

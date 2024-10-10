@@ -1,5 +1,4 @@
-﻿#if USE_TRANSLATE
-using Il2CppTMPro;
+﻿using Il2CppTMPro;
 using MelonLoader;
 using UnityEngine;
 using Il2Cpp;
@@ -7,6 +6,7 @@ using System.Text.RegularExpressions;
 
 namespace PVZ_Hyper_Fusion.AssetStore
 {
+#if USE_TRANSLATE
     public static class StringStore
     {
         internal static Dictionary<string, string> stringsDict = new Dictionary<string, string>();
@@ -507,5 +507,5 @@ namespace PVZ_Hyper_Fusion.AssetStore
             Log.LogInfo("String Entries: {0}", translationString.Count);
         }
     }
-}
 #endif
+}

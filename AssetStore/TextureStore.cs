@@ -1,9 +1,9 @@
-﻿#if USE_TEXTURE
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 
 namespace PVZ_Hyper_Fusion.AssetStore
 {
+#if USE_TEXTURE
     public static class TextureStore
     {
         internal static Dictionary<string, string> textureDict = new Dictionary<string, string>();
@@ -49,5 +49,5 @@ namespace PVZ_Hyper_Fusion.AssetStore
             }
         }
     }
-}
 #endif
+}

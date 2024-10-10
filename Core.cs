@@ -5,7 +5,7 @@ using HarmonyLib;
 using Il2CppTMPro;
 using PVZ_Hyper_Fusion.AssetStore;
 
-[assembly: MelonInfo(typeof(PVZ_Hyper_Fusion.Core), "PVZ Hyper Fusion", "0.0.2", "arifrios1st", null)]
+[assembly: MelonInfo(typeof(PVZ_Hyper_Fusion.Core), "PVZ Hyper Fusion", "0.0.3", "arifrios1st", null)]
 [assembly: MelonGame("LanPiaoPiao", "PlantsVsZombiesRH")]
 
 namespace PVZ_Hyper_Fusion

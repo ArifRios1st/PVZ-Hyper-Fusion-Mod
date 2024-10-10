@@ -1,4 +1,5 @@
-﻿using HarmonyLib;
+﻿#if USE_TRANSLATE
+using HarmonyLib;
 using Il2Cpp;
 using Il2CppTMPro;
 using PVZ_Hyper_Fusion.AssetStore;
@@ -24,3 +25,4 @@ namespace PVZ_Hyper_Fusion.Patches
         }
     }
 }
+#endif
